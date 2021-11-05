@@ -4,4 +4,9 @@ aligned_GM-7792_DRD-d6b1cf27-41ed-43b6-8050-2068ef941a0aDRD-d6b1cf27-41ed-43b6-8
 
 aligned_GM-7792_DRD-d6b1cf27-41ed-43b6-8050-2068ef941a0aDRD-d6b1cf27-41ed-43b6-8050-2068ef941a0a_GM-7792_pass-1_cleaned.pickle
 
+df_merged.pickle
+
+# MacOS files
 .DS_store
+.Rhistory
+.ipynb_checkpoints
