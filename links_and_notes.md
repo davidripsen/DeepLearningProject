@@ -10,8 +10,13 @@ https://dtudk.zoom.us/j/69875410401#success
 https://app.slack.com/client/T02BRU50ZQD/C02H8EXNVB8
 
 ## Blog posts
-
 https://curiousily.com/posts/credit-card-fraud-detection-using-autoencoders-in-keras/
+
+
+# Questions
+
+## Upsampling distorts the time discretization - such that there is a varying time between points. This is a problem for the memory of the LSTM cell, since it cannot identify the the proper length of its memory. If no upsampling, the time discretization is the same, but will the LSTM eat time series of different lengths?
+
 
 
 # Meeting notes
