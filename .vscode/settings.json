@@ -1,0 +1,4 @@
+{
+    "jupyter.sendSelectionToInteractiveWindow": true,
+    "python.terminal.activateEnvInCurrentTerminal": true
+}
