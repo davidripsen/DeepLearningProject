@@ -1,0 +1,146 @@
+% Gemini theme
+% See: https://rev.cs.uchicago.edu/k4rtik/gemini-uccs
+% A fork of https://github.com/anishathalye/gemini
+
+\documentclass[final]{beamer}
+
+% ====================
+% Packages
+% ====================
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[size=custom,width=120,height=72,scale=1.0]{beamerposter}
+\usetheme{gemini}
+\usecolortheme{uchicago}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{cleveref}
+\usepackage{hyperref}
+\usepackage{lipsum}
+\usepackage{wrapfig, blindtext}
+\pgfplotsset{compat=1.17}
+
+
+% ====================
+% Lengths
+% ====================
+
+% If you have N columns, choose \sepwidth and \colwidth such that
+% (N+1)*\sepwidth + N*\colwidth = \paperwidth
+\newlength{\sepwidth}
+\newlength{\colwidth}
+\setlength{\sepwidth}{0.025\paperwidth}
+\setlength{\colwidth}{0.3\paperwidth}
+
+\newcommand{\separatorcolumn}{\begin{column}{\sepwidth}\end{column}}
+
+% ====================
+% Title
+% ====================
+
+\title{Reinforcement learning project: Generalization in videogames}
+
+\author{Nina Braad Iskov (s174162) and Ditte Grønborg Blom (s174141)}
+
+\institute[shortinst]{Technical University of Denmark, Department of Applied Mathematics and Computer Science, Kgs. Lyngby, Denmark}
+
+% ====================
+% Footer (optional)
+% ====================
+
+\footercontent{
+  %\href{https://www.example.com}{https://www.example.com} \hfill
+  %ABC Conference 2025, New York --- XYZ-1234 \hfill
+  %\href{mailto:alyssa.p.hacker@example.com}{alyssa.p.hacker@example.com}}
+  DTU Compute\hfill
+  Department of Applied Mathematics and Computer Science\hfill
+  02456 Deep Learning}
+  
+  
+% (can be left out to remove footer)
+
+% ====================
+% Logo (optional)
+% ====================
+
+% use this to include logos on the left and/or right side of the header:
+% \logoright{\includegraphics[height=7cm]{logo1.pdf}}
+% \logoleft{\includegraphics[height=7cm]{logo2.pdf}}
+
+% ====================
+% Body
+% ====================
+
+\begin{document}
+\addtobeamertemplate{headline}{}
+{
+
+    \begin{tikzpicture}[remember picture,overlay]
+      \node [anchor=north west, inner sep=3cm] at ([xshift=0.0cm,yshift=1.0cm]current page.north west)
+      {\includegraphics[height=5.0cm]{dtu logo/White_RGB.png}}; % also try shield-white.eps
+      %\node [anchor=north east, inner sep=3cm] at ([xshift=0.0cm,yshift=2.5cm]current page.north east)
+      %{\includegraphics[height=8.0cm]{logos/cs-logo-white.png}};
+    \end{tikzpicture}
+}
+
+\begin{frame}[t]
+\begin{columns}[t]
+\separatorcolumn
+
+\begin{column}{\colwidth}
+
+  \begin{block}{Introduction}
+  The goal of this project is to ..
+  \lipsum[5]
+  
+  \end{block}
+\vspace{-7mm}
+ 
+\begin{block}{Model specification}
+\lipsum[8]
+
+\end{block}
+
+\end{column}
+
+\separatorcolumn
+
+\begin{column}{\colwidth}
+
+\begin{block}{Experiments}
+\heading{First experiment}
+\lipsum[10]
+ 
+\end{block}
+
+\end{column}
+
+\separatorcolumn
+
+\begin{column}{\colwidth}
+
+%\begin{alertblock}{}
+
+%\end{alertblock}
+
+\begin{block}{Conclusion}
+\lipsum[5]
+\end{block}
+
+\begin{block}{References}
+\vspace{-1mm}
+\nocite{*}
+\footnotesize{\bibliographystyle{plain}\bibliography{poster}}
+
+\end{block}
+
+\end{column}
+
+\separatorcolumn
+\end{columns}
+\end{frame}
+
+\end{document}
